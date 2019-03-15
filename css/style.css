@@ -1,0 +1,46 @@
+
+body {background-image: url("../images/trainBackground.jpg");
+      background-color: rgb(200, 222, 224);
+      height: 2000px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.display-4 {
+    font-size: 9vw;
+    position: relative;
+    animation-name: title;
+    animation-duration: 3s;
+    font-family: 'chivo', sans-serif;
+    text-shadow:.7px .7px rgb(41, 41, 41);
+    color: rgb(226, 246, 247);
+    left: 120px;
+  }
+
+  
+  @keyframes title {
+    0%   {left: -800px; color:rgb(137, 178, 180);}
+    80% {left: 150px; color:rgb(226, 246, 247);}
+    100% {left: 120px; color: rgb(226, 246, 247);}
+  }
+
+.card-header{
+    background-color:rgba(199, 232, 226, 0.021);
+    color: white;
+    text-shadow: .7px .7px rgb(27, 27, 27);
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+.card {background-color:rgba(128, 128, 128, 0.13);
+       color: white;
+       text-shadow: 1px 1px rgb(41, 41, 41);}
+
+.table {color: white;
+        text-shadow:.7px .7px rgb(41, 41, 41)}
+
+.btn {background-color: rgba(255, 255, 255, 0.048);
+    }
+.btn:hover {background-color: rgb(84, 162, 182)}
+

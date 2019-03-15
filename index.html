@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Tracker</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <!-- Link to Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+    <!-- Link to Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:700" rel="stylesheet">
+    <!-- Links to style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title m-5">
+                <div class="title">
+                    <h3 class="display-4">Train Tracker</h3>
+                </div>
+            </div>
+            <div class="card m-5">
+                <div class="card-header">
+                    Upcoming Trains
+                </div>
+                <div class="card-body">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col"><i class="fas fa-train"></i>
+                                    Train Name</th>
+                                <th scope="col"><i class="fas fa-map-marker-alt"></i>
+                                    Destination</th>
+                                <th scope="col"><i class="fas fa-clock"></i>
+                                    Frequency</th>
+                                <th scope="col"><i class="fas fa-arrow-circle-right"></i>
+                                    Next Arrival</th>
+                                <th scope="col"><i class="fas fa-user-clock"></i>
+                                    Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id = 'table'>
+    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card m-5">
+                <div class="card-header">
+                    Add Trains
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput">Train Name</label>
+                            <input type="text" class="form-control" id="name-input"
+                                placeholder="Thomas">
+                        </div>
+                        <div class="form-group">
+                            <label for="destinationInput">Destination</label>
+                            <input type="text" class="form-control" id="destination-input"
+                                placeholder="Nantucket">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstTrainInput">First Train Time (HH:mm)</label>
+                            <input type="time" class="form-control" id="firstTrain-input"
+                                placeholder="00:00">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequencyInput">Frequency (min)</label>
+                            <input type="number" class="form-control" id="frequency-input"
+                                placeholder="">
+                        </div>
+                        <div class="text-center">
+                        <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
+<script type="text/javascript" src="javascript.js"></script>
+
+</body>
